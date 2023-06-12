@@ -2123,6 +2123,11 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
+.link_nav_planmax:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 .div_section_header {
   width: 100%;
   flex: 0 auto;
@@ -2180,10 +2185,26 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
+.link_nav_planprimium:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 .tex_nav_palntradicional {
   align-self: center;
   font-size: 15px;
 }
+
+.link_nav_plantradicional:hover{
+  text-decoration: underline;
+  color: white;
+}
+
+.link_nav_planprimium:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 
 .div_home_nav {
   min-width: 400px;
@@ -2243,6 +2264,11 @@ textarea.w-input, textarea.w-select {
   overflow: visible;
 }
 
+
+.link_nav_nosotros:hover{
+text-decoration: underline;
+color: white;
+}
 .link-6 {
   color: #fff;
   flex: 1;
@@ -2271,6 +2297,11 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
+.link_nav_offgrid:hover{
+  text-decoration: underline;
+  color: white;
+}
+
 .tex_nav_offgride.tex_nav_opean {
   width: auto;
   min-height: 20px;
@@ -2295,6 +2326,11 @@ textarea.w-input, textarea.w-select {
   font-size: 12px;
   text-decoration: none;
   display: block;
+}
+
+.link_nav_sunpower:hover{
+  text-decoration: underline;
+  color: white;
 }
 
 .section_nav {
@@ -4375,6 +4411,68 @@ textarea.w-input, textarea.w-select {
   font-weight: 700;
 }
 
+.sliderMarcas {
+  background-color:black;
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  -webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+pointer-events: none;
+}
+
+.slider-container {
+  height: 100%;
+  width: 100%; /* Ajusta el ancho según tus necesidades */
+  overflow: hidden;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+.slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+  width: auto;
+  height: 100%;
+  animation: slide 30s infinite ease-in-out; /* Ajusta la duración de la animación según tus necesidades */
+}
+
+.slider li {
+  width: 20%;
+  height: 100%;
+  display: inline-block;
+  }
+
+.imgSlider {
+  width: auto;
+  height: 80%;
+  pointer-events: none;
+  filter: grayscale(100%);
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  /* 25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  } */
+  75% {
+    transform: translateX(-150%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .paragraph_sec_9 {
   margin-left: 0;
   margin-right: 0;
@@ -4444,9 +4542,30 @@ textarea.w-input, textarea.w-select {
   display: block;
 }
 
-.img_blog_3 {
+
+.img_blog_1, .img_blog_4, .img_blog_5, .img_blog_6, .img_blog_7{
   width: 15rem;
+  height: 15rem;
 }
+
+.carousel-section {
+  width: 100%; 
+  height: 300px; 
+  background-color: white;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
 
 .select-field {
   flex: 0 auto;
@@ -4650,6 +4769,7 @@ textarea.w-input, textarea.w-select {
 
 .img_blog_2 {
   width: 15rem;
+  height: 15rem;
 }
 
 .image-7 {
@@ -4751,8 +4871,9 @@ textarea.w-input, textarea.w-select {
   display: flex;
 }
 
-.img_blog_1 {
+.img_blog_3 {
   width: 15rem;
+  height: 15rem;
 }
 
 .tex_main {
