@@ -149,7 +149,7 @@
                             <li><img src="Home_Solarix_files/grupo_mexico.png.png" data-img src="IMG/LogoMarcas/grupo_mexico" alt="Marca 3" class="imgSlider lazyload"></li>
                             <li><img src="Home_Solarix_files/zebra.png.png" data-src="IMG/LogoMarcas/zebra.png" alt="Marca 3" class="imgSlider lazyload"></li>
                             <li><img src="Home_Solarix_files/mazda.pmg.png" data-src="IMg/LogoMarcas/Mazada.png" alt="Marca 3" class="imgSlider lazyload"></li>
-                            <li><img src="Home_Solarix_files/cfe.png.png" data-src="IMG/LogoMarcas/CFE.png" alt="Marca 2" class="imgSlider lazyload"></li>
+                            <li><img src="Home_Solarix_files/cfe.png.png" data-src="IMG/LogoMarcas/CFE.png" alt="Marca 2" class="cfe"></li>
                             <li><img src="Home_Solarix_files/lincon.png.png" data-src="IMG/LogoMarcas/lincon.png" alt="Marca 3" class="imgSlider lazyload"></li>
                             <li><img src="Home_Solarix_files/ayuntamieto.png.png" data-src="IMG/LogoMarcas/ayuntamiento.png" alt="Marca 3" class="ayuntamiento"></li>
                             <li><img src="Home_Solarix_files/suspiros.png.png" data-src="IMG/LogoMarcas/suspiros.png" alt="Marca 3" class="suspiros"></li>
@@ -405,7 +405,20 @@
                 </section>
             </div>
             <div class="button_agendar_b w-embed"><button class="button_main_h">Agendar Cita Virtual</button>
+                <section class="gallery-section">
+                    <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 1.png" alt="Imagen 1"></div>
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 2.png" alt="Imagen 2"></div>
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 3.png" alt="Imagen 3"></div>
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 4.png" alt="Imagen 4"></div>
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 5.png" alt="Imagen 5"></div>
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 6.png" alt="Imagen 6"></div>
+                        <div class="swiper-slide"><img src="Home_Solarix_files/Mesa de trabajo 7.png" alt="Imagen 7"></div>
 
+                      </div>
+                    </div>
+                  </section>
 
                 <style>
                     .button_main_h {
@@ -631,52 +644,63 @@
             </div>
         </section>
         <section class="section_10 wf-section">
-            <div class="columns-12 w-row">
-                <div class="w-col w-col-4">
-                    <div>
-                        <div class="div-block-116">
-                            <div>
-                                <div class="text-block-37"><a id="button_planMax"
-                                        href="#"
-                                        class="button_planmax w-button">Plan Max</a></div>
-                            </div>
-                            <div><a id="button_planPremium" href="#"
-                                    class="button_planpremium w-button">Plan Premium</a></div>
-                            <div><a id="button_planTradicional" href="#"
-                                    class="button_plantradicional w-button">Plan Tradicional</a></div>
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="column">
+                  <button class="btn" onclick="showContent(1)">Plan Max</button>
+                  <button class="btn" onclick="showContent(2)">Plan Premium</button>
+                  <button class="btn" onclick="showContent(3)">Plan Tradicional</button>
                 </div>
-                <div class="w-col w-col-8">
-                    <div class="div-block-120">
-                        <div class="div_img_planmax"><img
-                                src="./Home_Solarix_files/6480d5e96288be6d800cc85f_Grupo 577.png" loading="lazy"
-                                width="277" id="img_planMax" alt="" class="img_planmax"></div>
-                        <div id="div_tex_planMax" class="div_tex_planmax">
-                            <h4>Celdas Maxeon<br><span class="text-span-123">KV instalado $1,200 a $1,400 USD e
-                                    IVA</span></h4>
-                            <div>
-                                <ul role="list" class="list-3">
-                                    <li class="list-item-11">SunPower Maxeon Max 3</li>
-                                    <li>Potencia 485 Watts</li>
-                                    <li>Panel #1 en la industria</li>
-                                    <li>40 años de garantía y 60 años de vida útil</li>
-                                    <li>Confiabilidad inigualable +80O patentes</li>
-                                    <li>Mayor eficiencia por m2 que cualquier otro</li>
-                                    <li>Menos degradación de la industria del 0.25%</li>
-                                    <li>Opción a panel black</li>
-                                    <li>Evita por completo puntos calientes</li>
-                                    <li>Tecnología que reduce problemas de sombras</li>
-                                    <li>Celda de Silicio ultra puro</li>
-                                    <li>Resistente a roturas</li>
-                                    <li>Fabricado en Ensenada y Mexicali</li>
-                                    <li>Recomendado como el #1 por FORBES</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="column">
+                  <img class="image" id="image1" src="Home_Solarix_files/planMax.png" alt="Imagen 1">
+                  <img class="image" id="image2" src="Home_Solarix_files/planPremium.png" alt="Imagen 2">
+                  <img class="image" id="image3" src="Home_Solarix_files/planTradicional.png" alt="Imagen 3">
                 </div>
-            </div>
+                <div class="column">
+                  <ul class="list" id="list1">
+                    <h2 class="h2">Celdas Maxeon </h2>
+                    <h5 class="h5">KW Instalado $1,200 a $1,400 USD + IVA</h5>
+                    <li>- Sun Power Maxeon Max 3</li>
+                    <li>- Potencia 485 Watts</li>
+                    <li>- Panel #1 en la industria</li>
+                    <li>- 40 años de garantia y 60 años de vida útil</li>
+                    <li>- Confiabilidad inigualable +800 patentes</li>
+                    <li>- Mayo eficiencia por m2 que cualquier otro</li>
+                    <li>- Menos degradación de la industria del 0.25%</li>
+                    <li>- Opcion de panel black</li>
+                    <li>- Evita por completo puntos calientes</li>
+                    <li>- Tecnología que reduce problemas de sombras</li>
+                    <li>- Celda de Silicio ultra puro</li>
+                    <li>- Resistente a ropturas</li>
+                    <li>- Fabricado en Ensenada y Mexicali</li>
+                    <li>- Recomendado como el #1 por FORBES</li>
+                  </ul>
+                  <ul class="list" id="list2">
+                    <h2 class="h2">Celdas Preformance</h2>
+                    <h5 class="h5">KW Instalado $1,000 a $1,200 USD + IVA</h5>
+                    <li>- SunPower Preformance P6 Bifacial</li>
+                    <li>- Potencia de 545 Watts</li>
+                    <li>- Panel más vendido por Solarix</li>
+                    <li>- 25 años de garantía y 35 años de vida util</li>
+                    <li>- 144 patentes</li>
+                    <li>- Carga bifacial genera de un 5% a un 30% de energía adicional</li>
+                    <li>- Degardación baja del 0.54% anual</li>
+                    <li>- Mejor opción precio/caloidad</li>
+                    <li>- Evita por completo puntos claientes</li>
+                    <li>- Tecnología que reduce problemas de sombras</li>
+                    <li>- Resistente a roturas</li>
+                  </ul>
+                  <ul class="list" id="list3">
+                    <h2 class="h4">Celda Canadiana</h2>
+                    <h5 class="h5">KW Instalado $900 a $1,000 USD + IVA</h5>
+                    <li>- Canadian Solar CS6W</li>
+                    <li>- Potencia 454 Watts</li>
+                    <li>- El mejor panel en el segmento tradicional</li>
+                    <li>- 12 años de garantia y 25 años de vida util</li>
+                    <li>- Degradacion del 0.55% anual</li>
+                  </ul>
+                </div>
+              </div>
+              
         </section>
         <section class="section_11 wf-section">
             <h2 class="heading_sec_11">Agenda cita virtual</h2>

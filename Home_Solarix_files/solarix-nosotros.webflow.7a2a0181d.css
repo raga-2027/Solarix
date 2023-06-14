@@ -4,6 +4,10 @@ html {
   font-family: sans-serif;
 }
 
+@import url(gotham-ssm-medium.otf);
+
+@import url(gotham-ssm-light\ ..otf);
+
 body {
   margin: 0;
 }
@@ -2492,6 +2496,9 @@ color: white;
   flex-direction: column;
   justify-content: space-between;
   display: flex;
+  margin: 0;
+  padding: 0;
+  overflow:hidden;
 }
 
 .text-span {
@@ -4492,6 +4499,7 @@ pointer-events: none;
   font-size: 16px;
 }
 
+
 .list-item-7 {
   color: #fffcfc;
 }
@@ -4543,27 +4551,7 @@ pointer-events: none;
 }
 
 
-.img_blog_1, .img_blog_4, .img_blog_5, .img_blog_6, .img_blog_7{
-  width: 15rem;
-  height: 15rem;
-}
 
-.carousel-section {
-  width: 100%; 
-  height: 300px; 
-  background-color: white;
-}
-
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
 
 
@@ -5606,12 +5594,90 @@ pointer-events: none;
   margin-bottom: 42px;
 }
 
+
+.swiper-container {
+  width: 1280px;
+  height: 720px;
+  margin: 0 auto; /* Para centrar la galería */
+  overflow: hidden; /* Oculta la barra de desplazamiento */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: 1280px;
+  height: 720px;
+  margin-left: 30px;
+}
+
+.swiper-slide:last-child {
+  margin-right: 0; 
+}
+
+.cfe{
+  width: 50px;
+  height: 50px;
+}
+
+
 @media screen and (max-width: 991px) {
   .section_nav, .section_nav-2, .section_nav-3, .section_nav-4 {
     flex: 1;
     justify-content: center;
   }
 }
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+}
+
+.btn {
+  display: block;
+  margin-bottom: 8rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-bottom: 3px solid black;
+  cursor: pointer;
+  margin-left: 50px;
+  font-size: 25px;
+}
+
+.btn.active {
+  font-weight: bold;
+}
+.image{
+  width:300px ;
+  height: 350px;
+}
+
+.image,
+.list {
+  display: none;
+}
+
+.image.active,
+.list.active {
+  display: block;
+}
+
+.h5{
+  color: #174266;
+}
+
+
 
 #w-node-_9003f71a-8e11-b82d-9c46-9404b8d71036-6fde7eaf {
   align-self: center;
