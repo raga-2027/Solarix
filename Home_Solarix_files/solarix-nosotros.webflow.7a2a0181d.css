@@ -2129,12 +2129,10 @@ textarea.w-input, textarea.w-select {
 }
 
 .div_section_header {
-  width: 100%;
-  flex: 0 auto;
-  justify-content: space-between;
+  width: 95%;
+  justify-content: center;
   align-items: center;
-  display: flex;
-  margin-top: 30vh;
+  display: flex;height: auto;
 }
 
 .spam_home_8 {
@@ -2164,16 +2162,13 @@ textarea.w-input, textarea.w-select {
   color: #fff;
   text-align: right;
   border-right: 2px solid #fff;
-  flex: 0 auto;
   justify-content: flex-start;
-  align-self: center;
   align-items: center;
-  margin-left: 0;
-  margin-right: 26px;
-  padding-left: 0;
   padding-right: 13px;
   font-family: Gotham Ssm Light, sans-serif;
   display: flex;
+  width: 15%;
+  height: auto;
 }
 
 .link_nav_planprimium {
@@ -2387,14 +2382,12 @@ color: white;
 }
 
 .div_header_img_nuestrosclientes {
-  grid-column-gap: .5rem;
-  grid-row-gap: .5rem;
   flex: 1;
   justify-content: space-around;
-  align-self: center;
   align-items: center;
   display: flex;
-  overflow: auto;
+  height: auto;
+  width: 60%;
 }
 
 .spam_home_sunpower {
@@ -3708,7 +3701,6 @@ color: white;
 }
 
 .heder_home-3 {
-  min-height: 100vh;
   background-color: #000;
   background-image: url("https://uploads-ssl.webflow.com/647396c96fc6bf5f6fde7eac/647396cea8b17d10aa80ba46_%7D.png");
   background-position: 50% 0;
@@ -3716,10 +3708,9 @@ color: white;
   flex-direction: column;
   justify-content: space-between;
   align-items: stretch;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 0;
+  height: 100vh;
   display: flex;
+  width: 100%;
 }
 
 .link-20 {
@@ -4107,13 +4098,12 @@ color: white;
 
 .div_header_nuestros_clientes-2 {
   background-color: #000;
-  flex: 0 auto;
   justify-content: space-around;
   align-self: stretch;
   align-items: stretch;
-  margin-bottom: 0;
   display: flex;
-  overflow: auto;
+  width: 100%;
+  height: 8%;
 }
 
 .link_nav_offgrid {
@@ -4128,7 +4118,6 @@ color: white;
   color: #fff;
   text-align: center;
   flex: 1;
-  margin-right: 87px;
   font-family: Gotham Ssm Light, sans-serif;
 }
 
@@ -4162,19 +4151,11 @@ color: white;
 }
 
 .section_header-2 {
-  width: auto;
-  min-height: 400px;
-  min-width: 500px;
-  flex: 0 auto;
-  order: 0;
+  width: 95%;
   justify-content: space-between;
-  align-self: stretch;
   align-items: flex-end;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-top: 202px;
-  padding-bottom: 21px;
   display: flex;
+  height: 70%;
 }
 
 .image-66 {
@@ -4412,7 +4393,7 @@ color: white;
   align-items: center;
   display: flex;
   width: 100%;
-  height: 40%;
+  height: 60%;
   justify-content: flex-end;
 }
 
@@ -4589,8 +4570,8 @@ pointer-events: none;
 }
 
 .div_main_reduce_costos_2 {
-  flex-direction: column;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: center;
   width: 95%;
   height: 20%;
   display: flex;
@@ -5318,8 +5299,8 @@ height: 70%;
   font-family: Gotham Ssm Light, sans-serif;
   font-size: 12px;
   display: flex;
-  height:80%;
-  width: auto;
+  height: auto;
+  width: 50%;
 }
 
 .div_main_reduce_costos_2-copy {
@@ -5334,11 +5315,12 @@ height: 70%;
 .tex_main_2 {
   color: #fff;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: flex-start;
   font-family: Gotham Ssm Medium, sans-serif;
   font-size: 12px;
   display: flex;
+  width: 50%;
   height: 100%;
 }
 
@@ -5350,6 +5332,8 @@ height: 70%;
   font-family: Gotham Ssm Medium, sans-serif;
   font-size: 12px;
   display: flex;
+  width: 40%;
+  height: auto;
 }
 
 .p_main_2 {
@@ -5360,6 +5344,12 @@ height: 70%;
   font-size: 12px;
   display: flex;
   height: 100%;
+  width: 50%;
+}
+
+.div_header{
+  width: 100%;
+  height: 10%;
 }
 
 .img_planmax {
@@ -5802,6 +5792,11 @@ height: 70%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.video_main__black{
+  height: 100%;
+  width: auto;
 }
 
 #w-node-_9003f71a-8e11-b82d-9c46-9404b8d71036-6fde7eaf {
